@@ -1,0 +1,69 @@
+/* 전체 요소 모두 선택 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#content{
+  margin: 20px;
+  background-color: lightblue;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+article{
+  margin: 20px;
+}
+
+article h1{
+  text-align: center;
+  margin: 10px;
+}
+
+ul li{
+  border: 2px;
+  display: inline-flex;
+}
+
+a {
+  text-decoration: none;
+  background-color: dodgerblue;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+}
+
+body {
+  
+}
+
+#d1 div,#d2 div,#d3 div,#d4 div{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.c1 {
+  background-color: white;
+  margin: 30px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
