@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+main{
+  width: 60%;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+  align-items: center;
+  padding: 20px;
+}
+
+#top div{
+  display: inline-flex;
+  padding: 10px;
+}
+
+#top div:hover{
+  background-color: white;
+  color: black;
+}
+
+#name{
+  background-color: aliceblue;
+  border: 1px dotted gray;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dice{
+  display: flex;
+}
+
+#com, #user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+img{
+  padding: 10px;
+}
+
+#dice p{
+  font-weight: bold;
+  font-size: large;
+}
+
+
+#game{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dotted gray;
+  padding-bottom: 30px;
+  margin: 20px;
+}
+
+button{
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+button:hover{
+  background-color: coral;
+}
+
+#result{
+  padding: 40px;
+  margin-top: 20px;
+  margin: 20px;
+  border: 1px dotted gray;
+  text-align: center;
+}
