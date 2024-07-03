@@ -1,53 +1,84 @@
 /* 전체 요소 모두 선택 */
 * {
   margin: 0px;
-  padding: 0px;
+  padding: 0px; 
 }
 
-#content{
-  margin: 20px;
-  background-color: lightblue;
-}
-
-header{
+body {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: start;
 }
 
-article{
+#content {
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+header {
+  margin: 20px;
+  padding: 10px;
+}
+
+header > div, header > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > div {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+header > ul {
   margin: 20px;
 }
 
-article h1{
-  text-align: center;
-  margin: 10px;
+header li {
+  list-style: none;
+  display: inline-flex;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:royalblue;
 }
 
-ul li{
-  border: 2px;
-  display: inline-flex;
+header li:hover {
+  background-color: coral;
 }
 
 a {
   text-decoration: none;
-  background-color: dodgerblue;
   color: white;
-  margin: 5px;
-  padding: 10px;
+}
+ 
+article , section {
+  margin: 30px;
 }
 
-body {
-  
+h1 {
+  font-size: x-large;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-#d1 div,#d2 div,#d3 div,#d4 div{
+article {
+  padding: 40px;
+}
+section {
+  background-color: white;
+  padding: 20px;
+}
+
+section > div {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.c1 {
-  background-color: white;
-  margin: 30px;
+
+section p {
+  margin-left: 50px;
 }
 
 img {
@@ -55,15 +86,25 @@ img {
 }
 
 footer {
-  background-color: black;
-  color: white;
-  padding: 20px;
+   background-color: black;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px;
+   font-size: small;
 }
 
-@media screen and (max-width: 1024px) {
+
+/* 미디어쿼리 */
+@media screen and (min-width: 1280px) {
+  #content {
+    width: 80%;
+  }
   header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
   }
 }
